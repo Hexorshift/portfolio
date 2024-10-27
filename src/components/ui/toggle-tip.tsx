@@ -11,8 +11,14 @@ export interface ToggleTipProps extends ChakraPopover.RootProps {
 
 export const ToggleTip = forwardRef<HTMLDivElement, ToggleTipProps>(
   function ToggleTip(props, ref) {
-    const { showArrow, children, portalled, content, portalRef, ...rest } =
-      props
+    const {
+      showArrow,
+      children,
+      portalled = true,
+      content,
+      portalRef,
+      ...rest
+    } = props
 
     return (
       <ChakraPopover.Root
@@ -48,7 +54,7 @@ export const InfoTip = (props: Partial<ToggleTipProps>) => {
   const { children, ...rest } = props
   return (
     <ToggleTip content={children} {...rest}>
-      <IconButton variant="ghost" aria-label="info" size="xs">
+      <IconButton variant="ghost" aria-label="info" size="2xs">
         <HiOutlineInformationCircle />
       </IconButton>
     </ToggleTip>
