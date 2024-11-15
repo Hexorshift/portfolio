@@ -26,13 +26,13 @@ const Experience = () => {
             </Flex>
             <Box mt="2">
               <Text mb="1">
-                ● Conducted research characterizing the brain vascular perfusion following peripheral nerve trauma
-                alongside graduate students at Queens College
+                ● Conducted research on the brain’s vascular perfusion following peripheral nerve trauma alongside
+                graduate students at Queens College
               </Text>
               <Text mb="1">
                 ● Operated RWD RFLSI III Laser Speckle Imaging System and software, learned to use various RWD apparatus
               </Text>
-              <Text>● Wrote a research paper and presented the findings of the research to faculty and others</Text>
+              <Text>● Wrote a research paper and presented the findings to faculty and others</Text>
               <Text>● Worked with other interns in a team and attended weekly research findings meetings</Text>
             </Box>
           </Flex>
