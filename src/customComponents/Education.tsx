@@ -2,7 +2,13 @@ import { Flex, Heading, Card, Box, Text } from "@chakra-ui/react";
 
 const Education = () => {
   return (
-    <Flex mt="8%" flexDir={["column", "column", "row"]} justifyContent="space-between" alignItems="start">
+    <Flex
+      id="Education"
+      mt="8%"
+      flexDir={["column", "column", "row"]}
+      justifyContent="space-between"
+      alignItems="start"
+    >
       <Heading as="h2" width={["100%", "100%", "25%"]} fontSize="3xl" fontWeight="bold">
         EDUCATION
       </Heading>

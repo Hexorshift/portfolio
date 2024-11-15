@@ -3,7 +3,7 @@ import NextImage from "next/image";
 
 const Skills = () => {
   return (
-    <Flex mt="8%" flexDir={["column", "column", "row"]} justifyContent="space-between" alignItems="start">
+    <Flex id="Skills" mt="8%" flexDir={["column", "column", "row"]} justifyContent="space-between" alignItems="start">
       <Heading as="h2" width={["100%", "100%", "25%"]} fontSize="3xl" fontWeight="bold">
         SKILLS
       </Heading>
@@ -57,7 +57,7 @@ const Skills = () => {
               { name: "Deno", img: "https://cdn.worldvectorlogo.com/logos/deno-1.svg", background: true },
               { name: "React", img: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
               { name: "Next.js", img: "https://cdn.worldvectorlogo.com/logos/next-js.svg", background: true },
-              { name: "Electron.js", img: "https://cdn.worldvectorlogo.com/logos/electron-1.svg" },
+              { name: "Electron", img: "https://cdn.worldvectorlogo.com/logos/electron-1.svg" },
               { name: "Chakra UI", img: "https://avatars.githubusercontent.com/u/54212428?s=200" },
               { name: "MongoDB", img: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
               {

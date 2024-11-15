@@ -2,7 +2,7 @@ import { Flex, Heading, Card, Text } from "@chakra-ui/react";
 
 const AboutMe = () => {
   return (
-    <Flex mt="5%" flexDir={["column", "column", "row"]} justifyContent="space-between" alignItems="start">
+    <Flex id="AboutMe" mt="5%" flexDir={["column", "column", "row"]} justifyContent="space-between" alignItems="start">
       <Heading as="h2" width={["100%", "100%", "25%"]} fontSize="3xl" fontWeight="bold">
         ABOUT ME
       </Heading>
