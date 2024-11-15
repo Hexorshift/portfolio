@@ -1,5 +1,6 @@
 import { Flex, Box, Heading, Text, Image, Link } from "@chakra-ui/react";
 import NextImage from "next/image";
+import NextLink from "next/link";
 
 const Header = () => {
   return (
@@ -22,11 +23,11 @@ const Header = () => {
         />
       </Image> */}
       <Flex flexDir="column">
-        <Link href="/#AboutMe">About Me</Link>
-        <Link href="/#Skills">Skills</Link>
-        <Link href="/#Education">Education</Link>
-        <Link href="/#Experience">Experience</Link>
-        <Link href="/#Projects">Projects</Link>
+        <NextLink href="/#AboutMe">About Me</NextLink>
+        <NextLink href="/#Skills">Skills</NextLink>
+        <NextLink href="/#Education">Education</NextLink>
+        <NextLink href="/#Experience">Experience</NextLink>
+        <NextLink href="/#Projects">Projects</NextLink>
       </Flex>
     </Flex>
   );
