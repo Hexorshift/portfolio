@@ -4,7 +4,12 @@ const nextConfig = {
     optimizePackageImports: ["@chakra-ui/react"]
   },
   images: {
-    domains: ["cdn.discordapp.com", "cdn.worldvectorlogo", "avatars.githubusercontent.com", "uxwing.com"]
+    remotePatterns: [
+      { hostname: "cdn.discordapp.com" },
+      { hostname: "cdn.worldvectorlogo" },
+      { hostname: "avatars.githubusercontent.com" },
+      { hostname: "uxwing.com" }
+    ]
   }
 };
 

@@ -7,7 +7,7 @@ const AboutMe = () => {
         ABOUT ME
       </Heading>
       <Card.Root p="1" width={["100%", "100%", "75%"]}>
-        <Text textAlign="justify">
+        <Text>
           Hello! My name is Abu Chowdhury, and I am an aspiring software engineer. I enjoy working with various
           technologies and primarily focus on full-stack development.
         </Text>

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Abu Chowdhury - Aspiring Software Engineer",
     description:
       "Hello! My name is Abu Chowdhury, and I am an aspiring software engineer. I enjoy working with various technologies and primarily focus on full-stack development.",
-    images: "https://i.imghippo.com/files/fl4330aw.png",
+    images: "https://i.ibb.co/ft9mRyG/Screenshot-2025-01-06-145959.png",
     card: "summary_large_image"
   },
   openGraph: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Abu Chowdhury - Aspiring Software Engineer",
     description:
       "Hello! My name is Abu Chowdhury, and I am an aspiring software engineer. I enjoy working with various technologies and primarily focus on full-stack development.",
-    images: "https://i.imghippo.com/files/fl4330aw.png"
+    images: "https://i.ibb.co/ft9mRyG/Screenshot-2025-01-06-145959.png"
   }
 };
 

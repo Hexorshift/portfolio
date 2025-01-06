@@ -30,9 +30,8 @@ const Skills = () => {
                   justifyContent="space-between"
                   my="0.5"
                   mr="2"
-                  width="128px"
                 >
-                  <Image width="32px" mr="0.5" asChild>
+                  <Image width="32px" mr="2" asChild>
                     <NextImage
                       style={{ borderRadius: "10%" }}
                       width="256"
@@ -75,9 +74,8 @@ const Skills = () => {
                   justifyContent="space-between"
                   my="0.5"
                   mr="2"
-                  width="128px"
                 >
-                  <Image width="32px" mr="0.5" background={lib.background ? "white" : ""} asChild>
+                  <Image width="32px" mr="2" background={lib.background ? "white" : ""} asChild>
                     <NextImage
                       style={{ borderRadius: "10%" }}
                       width="256"
@@ -100,7 +98,10 @@ const Skills = () => {
             {[
               { name: "Linux", img: "https://cdn.worldvectorlogo.com/logos/ubuntu-4.svg" },
               { name: "Git", img: "https://cdn.worldvectorlogo.com/logos/git-icon.svg" },
-              { name: "AWS", img: "https://cdn.worldvectorlogo.com/logos/aws-2.svg" }
+              { name: "AWS", img: "https://cdn.worldvectorlogo.com/logos/aws-2.svg" },
+              { name: "Docker", img: "https://cdn.worldvectorlogo.com/logos/docker-4.svg" },
+              { name: "Google Workspace", img: "https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" },
+              { name: "Microsoft Office Suite", img: "https://cdn.worldvectorlogo.com/logos/Microsoft-365.svg" }
             ].map((tech: { name: string; img: string }, index) => {
               return (
                 <Card.Root
@@ -111,9 +112,8 @@ const Skills = () => {
                   justifyContent="space-between"
                   my="0.5"
                   mr="2"
-                  width="128px"
                 >
-                  <Image width="32px" mr="0.5" asChild>
+                  <Image width="32px" mr="2" asChild>
                     <NextImage
                       style={{ borderRadius: "10%" }}
                       width="256"

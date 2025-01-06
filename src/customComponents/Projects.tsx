@@ -11,7 +11,7 @@ const Projects = () => {
           {
             name: "Portfolio",
             stack: ["TypeScript", "Next.js", "Chakra UI"],
-            date: "October 2024 - Present",
+            date: "October 2024",
             link: "https://abuc.me",
             github: "https://github.com/Hexorshift/portfolio"
           },
@@ -25,14 +25,14 @@ const Projects = () => {
           {
             name: "Mouse Controls",
             stack: ["JavaScript", "Electron", "React", "Chakra UI"],
-            date: "January - May 2024",
+            date: "January 2024",
             link: "https://flightsim.to/file/67688/mouse-controls-use-mouse-as-yoke",
             github: ""
           },
           {
             name: "Axe Doo (Discord Bot)",
             stack: ["JavaScript", "Node.js", "Discord.js", "AWS"],
-            date: "December 2023 - Present",
+            date: "December 2023",
             link: "",
             github: "https://github.com/Hexorshift/Axe-Doo"
           },

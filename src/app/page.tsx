@@ -5,6 +5,7 @@ import Education from "@/customComponents/Education";
 import Experience from "@/customComponents/Experience";
 import Projects from "@/customComponents/Projects";
 import Header from "@/customComponents/Header";
+import Certificates from "@/customComponents/Certificates";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Education />
       <Experience />
       <Projects />
+      <Certificates />
     </Layout>
   );
 }
