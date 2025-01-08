@@ -8,7 +8,10 @@ const nextConfig = {
       { hostname: "cdn.discordapp.com" },
       { hostname: "cdn.worldvectorlogo" },
       { hostname: "avatars.githubusercontent.com" },
-      { hostname: "uxwing.com" }
+      { hostname: "uxwing.com" },
+      { hostname: "i.ibb.co" },
+      { hostname: "cdn.flightsim.to" },
+      { hostname: "cdn.discordapp.com" }
     ]
   }
 };

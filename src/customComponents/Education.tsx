@@ -4,12 +4,12 @@ const Education = () => {
   return (
     <Flex
       id="Education"
-      mt="8%"
+      mt="5%"
       flexDir={["column", "column", "row"]}
       justifyContent="space-between"
       alignItems="start"
     >
-      <Heading as="h2" width={["100%", "100%", "25%"]} fontSize="3xl" fontWeight="bold">
+      <Heading as="h2" fontSize="3xl" fontWeight="bold">
         EDUCATION
       </Heading>
       <Card.Root width={["100%", "100%", "75%"]} p="1">

@@ -3,8 +3,8 @@ import NextImage from "next/image";
 
 const Skills = () => {
   return (
-    <Flex id="Skills" mt="8%" flexDir={["column", "column", "row"]} justifyContent="space-between" alignItems="start">
-      <Heading as="h2" width={["100%", "100%", "25%"]} fontSize="3xl" fontWeight="bold">
+    <Flex id="Skills" mt="5%" flexDir={["column", "column", "row"]} justifyContent="space-between" alignItems="start">
+      <Heading as="h2" fontSize="3xl" fontWeight="bold">
         SKILLS
       </Heading>
       <Flex width={["100%", "100%", "75%"]} flexDir="column">
@@ -23,6 +23,11 @@ const Skills = () => {
             ].map((lang: { name: string; img: string }, index) => {
               return (
                 <Card.Root
+                  data-state="open"
+                  _open={{
+                    animationName: "fade-in, scale-in",
+                    animationDuration: "300ms"
+                  }}
                   key={index}
                   p="1"
                   flexDir="row"
@@ -67,6 +72,11 @@ const Skills = () => {
             ].map((lib: { name: string; img: string; background?: boolean }, index) => {
               return (
                 <Card.Root
+                  data-state="open"
+                  _open={{
+                    animationName: "fade-in, scale-in",
+                    animationDuration: "300ms"
+                  }}
                   key={index}
                   p="1"
                   flexDir="row"
@@ -105,6 +115,11 @@ const Skills = () => {
             ].map((tech: { name: string; img: string }, index) => {
               return (
                 <Card.Root
+                  data-state="open"
+                  _open={{
+                    animationName: "fade-in, scale-in",
+                    animationDuration: "300ms"
+                  }}
                   key={index}
                   p="1"
                   flexDir="row"

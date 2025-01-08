@@ -1,14 +1,14 @@
-import { Flex, Box, Heading, Text, Image, Link } from "@chakra-ui/react";
+import { Flex, Box, Heading, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 const Header = () => {
   return (
-    <Flex mt="3%" flexDir="row" flexWrap="wrap" justifyContent="space-between" alignItems="center">
+    <Flex mt="1%" flexDir="row" flexWrap="wrap" justifyContent="space-between" alignItems="center">
       <Box>
         <Heading as="h1" fontSize="5xl" fontWeight="bold">
           Abu Chowdhury
         </Heading>
-        <Text mt="3" mb="8%" as="h2" fontSize="2xl">
+        <Text mt="3" mb="5%" as="h2" fontSize="2xl">
           Aspiring Software Enginner
         </Text>
       </Box>
