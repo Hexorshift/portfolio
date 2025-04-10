@@ -14,7 +14,7 @@ import {
 import { useState } from "react";
 
 const Experience = () => {
-  const [value, setValue] = useState(["first-item"]);
+  const [value, setValue] = useState(["third-item"]);
 
   return (
     <Flex
@@ -32,7 +32,18 @@ const Experience = () => {
           <AccordionRoot multiple value={value} onValueChange={(e) => setValue(e.value)}>
             {[
               {
-                value: "first-item",
+                value: "third-item",
+                company: "The Difference App",
+                title: "Software Engineer Intern",
+                date: "March - May 2025",
+                responsiblites: [
+                  "Developed a group feature for 10,000+ users using Laravel, Flutter, and MySQL, enabling collaborative weight management and tracking",
+                  "Collaborated with a cross-functional team of 25+ other interns using Agile methodology and worked closely with stakeholders to gather requirements",
+                  "Delivered the feature within a Sprint, actively contributed to daily Scrum meetings to align with project goals, and improve team collaboration"
+                ]
+              },
+              {
+                value: "second-item",
                 company: "Tajerian Lab",
                 title: "Research Intern",
                 date: "July - August 2023",
@@ -44,7 +55,7 @@ const Experience = () => {
                 ]
               },
               {
-                value: "second-item",
+                value: "first-item",
                 company: "QSI Computer Science Club",
                 title: "Developer Mentor",
                 date: "September 2021 - June 2022",

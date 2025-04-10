@@ -1,4 +1,5 @@
 import { Flex, Heading, Card, Text, Image, Link } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 const Projects = () => {
   return (
@@ -76,11 +77,17 @@ const Projects = () => {
                 width="350px"
                 overflow="hidden"
               >
-                <Image src={project.img} alt={project.name} width="350px" height="200px" />
+                {project.link ? (
+                  <NextLink href={project.link} target="_blank">
+                    <Image src={project.img} alt={project.name} width="350px" height="200px" />
+                  </NextLink>
+                ) : (
+                  <Image src={project.img} alt={project.name} width="350px" height="200px" />
+                )}
                 <Card.Body p="1">
                   <Flex justifyContent="space-between">
                     {project.link ? (
-                      <Link href={project.link} target="_blank" color="blue.500">
+                      <Link href={project.link} target="_blank" color="blue.500" _focus={{ outline: "none" }}>
                         {project.name}
                       </Link>
                     ) : (
@@ -91,7 +98,7 @@ const Projects = () => {
                   <Flex justifyContent="space-between">
                     <Text>{project.stack.join(", ")}</Text>
                     {project.github ? (
-                      <Link href={project.github} target="_blank" color="blue.500">
+                      <Link href={project.github} target="_blank" color="blue.500" _focus={{ outline: "none" }}>
                         GitHub
                       </Link>
                     ) : (

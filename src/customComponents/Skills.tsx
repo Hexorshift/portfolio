@@ -19,8 +19,9 @@ const Skills = () => {
               { name: "TypeScript", img: "https://cdn.worldvectorlogo.com/logos/typescript.svg" },
               { name: "JavaScript", img: "https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" },
               { name: "Java", img: "https://cdn.worldvectorlogo.com/logos/java.svg" },
-              { name: "C++", img: "https://cdn.worldvectorlogo.com/logos/c.svg" }
-            ].map((lang: { name: string; img: string }, index) => {
+              { name: "C++", img: "https://cdn.worldvectorlogo.com/logos/c.svg" },
+              { name: "PHP", img: "https://www.php.net//images/logos/new-php-logo.svg" }
+            ].map((lang: { name: string; img: string; background?: boolean }, index) => {
               return (
                 <Card.Root
                   data-state="open"
@@ -36,7 +37,7 @@ const Skills = () => {
                   my="0.5"
                   mr="2"
                 >
-                  <Image width="32px" mr="2" asChild>
+                  <Image width="32px" mr="2" background={lang.background ? "white" : ""} asChild>
                     <NextImage
                       style={{ borderRadius: "10%" }}
                       width="256"
@@ -63,6 +64,7 @@ const Skills = () => {
               { name: "Next.js", img: "https://cdn.worldvectorlogo.com/logos/next-js.svg", background: true },
               { name: "Electron", img: "https://cdn.worldvectorlogo.com/logos/electron-1.svg" },
               { name: "Chakra UI", img: "https://avatars.githubusercontent.com/u/54212428?s=200" },
+              { name: "Laravel", img: "https://cdn.worldvectorlogo.com/logos/laravel-2.svg" },
               { name: "MongoDB", img: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
               {
                 name: "RESTful APIs",
