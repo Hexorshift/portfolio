@@ -32,6 +32,13 @@ const Experience = () => {
           <AccordionRoot multiple value={value} onValueChange={(e) => setValue(e.value)}>
             {[
               {
+                value: "fourth-item",
+                company: "CUNY K16 Initiatives",
+                title: "Bridge Coach",
+                date: "May 2025 - September 2025",
+                responsiblites: []
+              },
+              {
                 value: "third-item",
                 company: "The Difference App",
                 title: "Software Engineer Intern",

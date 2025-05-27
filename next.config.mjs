@@ -11,7 +11,8 @@ const nextConfig = {
       { hostname: "uxwing.com" },
       { hostname: "i.ibb.co" },
       { hostname: "cdn.flightsim.to" },
-      { hostname: "cdn.discordapp.com" }
+      { hostname: "cdn.discordapp.com" },
+      { hostname: "upload.wikimedia.org" }
     ]
   }
 };

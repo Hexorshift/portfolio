@@ -17,10 +17,13 @@ const Skills = () => {
               { name: "HTML", img: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
               { name: "CSS", img: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
               { name: "TypeScript", img: "https://cdn.worldvectorlogo.com/logos/typescript.svg" },
-              { name: "JavaScript", img: "https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" },
+              {
+                name: "JavaScript",
+                img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/500px-JavaScript-logo.png"
+              },
               { name: "Java", img: "https://cdn.worldvectorlogo.com/logos/java.svg" },
-              { name: "C++", img: "https://cdn.worldvectorlogo.com/logos/c.svg" },
-              { name: "PHP", img: "https://www.php.net//images/logos/new-php-logo.svg" }
+              { name: "PHP", img: "https://www.php.net//images/logos/new-php-logo.svg" },
+              { name: "Dart", img: "https://cdn.worldvectorlogo.com/logos/dart.svg" }
             ].map((lang: { name: string; img: string; background?: boolean }, index) => {
               return (
                 <Card.Root
@@ -60,6 +63,11 @@ const Skills = () => {
             {[
               { name: "Node.js", img: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
               { name: "Deno", img: "https://cdn.worldvectorlogo.com/logos/deno-1.svg", background: true },
+              {
+                name: "Bun",
+                img: "https://bun.sh/logo.svg",
+                background: true
+              },
               { name: "React", img: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
               { name: "Next.js", img: "https://cdn.worldvectorlogo.com/logos/next-js.svg", background: true },
               { name: "Electron", img: "https://cdn.worldvectorlogo.com/logos/electron-1.svg" },

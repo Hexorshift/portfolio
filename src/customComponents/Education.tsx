@@ -20,7 +20,7 @@ const Education = () => {
             </Text>
             <Text>Computer Science, Bachelor of Arts</Text>
           </Box>
-          <Text>Expected graduation: 2026</Text>
+          <Text>Expected graduation: May 2026</Text>
         </Flex>
         <Box mt="2">
           <Text fontWeight="bold">Relevant Courses:</Text>
