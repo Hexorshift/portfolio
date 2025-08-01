@@ -12,7 +12,8 @@ const nextConfig = {
       { hostname: "i.ibb.co" },
       { hostname: "cdn.flightsim.to" },
       { hostname: "cdn.discordapp.com" },
-      { hostname: "upload.wikimedia.org" }
+      { hostname: "upload.wikimedia.org" },
+      { hostname: "media.licdn.com" }
     ]
   }
 };

@@ -1,45 +1,49 @@
-import { Flex, Box, Heading, Text, Menu, Portal, Button, IconButton } from "@chakra-ui/react";
-import NextLink from "next/link";
+import { Flex, Heading, Text, Menu, Portal, IconButton, Box } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import NextLink from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
-    <Flex mt="1%" flexDir="row" flexWrap="wrap" justifyContent="space-between" alignItems="flex-start">
-      <Box>
-        <Heading as="h1" fontSize="3xl" fontWeight="bold">
-          Abu Chowdhury
-        </Heading>
-        <Text mt="3" mb="5%" as="h2" fontSize="xl">
-          Aspiring Software Enginner
-        </Text>
-      </Box>
+    <Flex justifyContent="space-between" alignItems="flex-start">
+      <Flex flexDir="row" alignItems="center" gap={3}>
+        <Image
+          style={{ width: "128px", borderRadius: "100%" }}
+          src="/headshot.jpeg"
+          alt="headshot"
+          width={256}
+          height={256}
+        />
+        <Box>
+          <Heading as="h1" fontSize="3xl" fontWeight="bold">
+            Abu Chowdhury
+          </Heading>
+          <Text>Aspiring Software Enginner</Text>
+        </Box>
+      </Flex>
       <Menu.Root>
         <Menu.Trigger asChild>
-          <IconButton variant="outline" size="sm">
+          <IconButton variant="outline" size="md" borderRadius="xl">
             <RxHamburgerMenu />
           </IconButton>
         </Menu.Trigger>
         <Portal>
           <Menu.Positioner>
-            <Menu.Content>
-              <Menu.Item value="about-me">
-                <NextLink href="/#AboutMe">About Me</NextLink>
-              </Menu.Item>
-              <Menu.Item value="skills">
-                <NextLink href="/#Skills">Skills</NextLink>
-              </Menu.Item>
-              <Menu.Item value="education">
-                <NextLink href="/#Education">Education</NextLink>
-              </Menu.Item>
-              <Menu.Item value="experience">
-                <NextLink href="/#Experience">Experience</NextLink>
-              </Menu.Item>
-              <Menu.Item value="projects">
-                <NextLink href="/#Projects">Projects</NextLink>
-              </Menu.Item>
-              <Menu.Item value="certificates">
-                <NextLink href="/#Certificates">Certificates</NextLink>
-              </Menu.Item>
+            <Menu.Content borderRadius="xl">
+              {[
+                { name: "About Me" },
+                { name: "Skills" },
+                { name: "Education" },
+                { name: "Experience" },
+                { name: "Projects" },
+                { name: "Certificates" }
+              ].map((link, index) => {
+                return (
+                  <Menu.Item key={index} value={link.name} borderRadius="xl">
+                    <NextLink href={`/#${link.name}`}>{link.name}</NextLink>
+                  </Menu.Item>
+                );
+              })}
             </Menu.Content>
           </Menu.Positioner>
         </Portal>

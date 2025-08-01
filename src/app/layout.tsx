@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Provider } from "@/components/ui/provider";
 import { Lexend } from "next/font/google";
+import { Box } from "@chakra-ui/react";
+import Footer from "@/customComponents/Footer";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
     title: "Abu Chowdhury - Aspiring Software Engineer",
     description:
       "Hello! My name is Abu Chowdhury, and I am an aspiring software engineer. I enjoy working with various technologies and primarily focus on full-stack development.",
-    images: "https://i.ibb.co/ft9mRyG/Screenshot-2025-01-06-145959.png",
+    images: "https://abuc.me/overview.png",
     card: "summary_large_image"
   },
   openGraph: {
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
     title: "Abu Chowdhury - Aspiring Software Engineer",
     description:
       "Hello! My name is Abu Chowdhury, and I am an aspiring software engineer. I enjoy working with various technologies and primarily focus on full-stack development.",
-    images: "https://i.ibb.co/ft9mRyG/Screenshot-2025-01-06-145959.png"
+    images: "https://abuc.me/overview.png"
   }
 };
 
@@ -37,7 +39,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={lexend.className} suppressHydrationWarning>
       <body>
-        <Provider>{children}</Provider>
+        <Provider>
+          <Box maxW="960px" mx="auto" py="3.5" px="1">
+            {children}
+            <Footer />
+          </Box>
+        </Provider>
       </body>
     </html>
   );
