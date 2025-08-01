@@ -1,7 +1,7 @@
 export default [
   {
     value: "fourth-item",
-    company: "CUNY K16 Initiatives",
+    company: "CUNY CCB4A",
     title: "Postsecondary Access Coach",
     date: "May - September 2025",
     responsiblites: [

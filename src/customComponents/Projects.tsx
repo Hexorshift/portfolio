@@ -23,6 +23,7 @@ const Projects = () => {
               justifyContent="space-between"
               width="350px"
               overflow="hidden"
+              borderRadius="xl"
             >
               {project.link ? (
                 <NextLink href={project.link} target="_blank">

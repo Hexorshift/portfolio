@@ -1,6 +1,6 @@
 import experiences from "@/experiences";
 import Section from "./Section";
-import { List, Timeline } from "@chakra-ui/react";
+import { Flex, List, Text, Timeline } from "@chakra-ui/react";
 import { LuCircle } from "react-icons/lu";
 
 const Experience = () => {
@@ -18,7 +18,12 @@ const Experience = () => {
               </Timeline.Connector>
               <Timeline.Content>
                 <Timeline.Title fontSize="xl">{experience.company}</Timeline.Title>
-                <Timeline.Description fontSize="md">{experience.date}</Timeline.Description>
+                <Timeline.Description fontSize="md">
+                  <Flex flexDir={{ base: "column", md: "row" }} justifyContent="space-between">
+                    <Text>{experience.title}</Text>
+                    <Text>{experience.date}</Text>
+                  </Flex>
+                </Timeline.Description>
                 <List.Root as="ol" listStyle="decimal" px="5">
                   {experience.responsiblites.map((responsiblity, index) => {
                     return <List.Item key={index}>{responsiblity}</List.Item>;
