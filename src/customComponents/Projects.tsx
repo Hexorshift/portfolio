@@ -1,7 +1,7 @@
 import projects from "@/projects";
 import NextLink from "next/link";
 import Section from "./Section";
-import { Flex, Card, Text, Image } from "@chakra-ui/react";
+import { Flex, Card, Text, Image, Tag } from "@chakra-ui/react";
 
 const Projects = () => {
   return (
@@ -44,7 +44,15 @@ const Projects = () => {
                   <Text>{project.date}</Text>
                 </Flex>
                 <Flex justifyContent="space-between">
-                  <Text>{project.stack.join(", ")}</Text>
+                  <Flex gap={1}>
+                    {project.stack.map((tech, index) => {
+                      return (
+                        <Tag.Root key={index} borderRadius="md" variant="solid">
+                          <Tag.Label>{tech}</Tag.Label>
+                        </Tag.Root>
+                      );
+                    })}
+                  </Flex>
                   {project.github ? (
                     <NextLink href={project.github} target="_blank" style={{ color: "#3182ce" }}>
                       GitHub

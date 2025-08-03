@@ -2,6 +2,8 @@ export default [
   {
     value: "fourth-item",
     company: "CUNY CCB4A",
+    logo: "/cuny-logo.png",
+    url: "https://www.cuny.edu/academics/current-initiatives/k16/college-career-bridge-for-all",
     title: "Postsecondary Access Coach",
     date: "May - September 2025",
     responsiblites: [
@@ -13,6 +15,8 @@ export default [
   {
     value: "third-item",
     company: "The Difference App",
+    logo: "/the-difference-app-logo.webp",
+    url: "https://thedifferenceapp.com",
     title: "Software Engineer Intern",
     date: "March - May 2025",
     responsiblites: [
@@ -24,6 +28,8 @@ export default [
   {
     value: "second-item",
     company: "Tajerian Lab",
+    logo: "/tajerian-lab-logo.png",
+    url: "https://www.tajerianlab.com",
     title: "Research Intern",
     date: "July - August 2023",
     responsiblites: [
@@ -36,6 +42,8 @@ export default [
   {
     value: "first-item",
     company: "QSI Computer Science Club",
+    logo: "/qsi-logo.png",
+    url: "https://www.queensinquiry.com",
     title: "Developer Mentor",
     date: "September 2021 - June 2022",
     responsiblites: [

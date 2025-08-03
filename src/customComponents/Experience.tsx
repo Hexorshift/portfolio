@@ -1,23 +1,30 @@
 import experiences from "@/experiences";
 import Section from "./Section";
-import { Flex, List, Text, Timeline } from "@chakra-ui/react";
-import { LuCircle } from "react-icons/lu";
+import { Avatar, Flex, List, Text, Timeline } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Experience = () => {
   return (
     <Section heading="Experience">
-      <Timeline.Root size="md">
+      <Timeline.Root size="xl" px="1">
         {experiences.map((experience, index) => {
           return (
             <Timeline.Item key={index}>
               <Timeline.Connector>
                 <Timeline.Separator />
                 <Timeline.Indicator>
-                  <LuCircle />
+                  <Avatar.Root size="md">
+                    <Avatar.Image src={experience.logo} />
+                    <Avatar.Fallback name={experience.company} />
+                  </Avatar.Root>
                 </Timeline.Indicator>
               </Timeline.Connector>
               <Timeline.Content>
-                <Timeline.Title fontSize="xl">{experience.company}</Timeline.Title>
+                <Link href={experience.url} target="_blank">
+                  <Timeline.Title textDecor="underline" fontSize="xl">
+                    {experience.company}
+                  </Timeline.Title>
+                </Link>
                 <Timeline.Description fontSize="md">
                   <Flex flexDir={{ base: "column", md: "row" }} justifyContent="space-between">
                     <Text>{experience.title}</Text>
