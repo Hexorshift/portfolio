@@ -20,9 +20,10 @@ export default [
     title: "Software Engineer Intern",
     date: "March - May 2025",
     responsiblites: [
-      "Developed a group feature for 10,000+ users using Laravel, Flutter, and MySQL, enabling collaborative weight management and tracking",
-      "Collaborated with a cross-functional team of 25+ other interns using Agile methodology and worked closely with stakeholders to gather requirements",
-      "Delivered the feature within a Sprint, actively contributed to daily Scrum meetings to align with project goals, and improve team collaboration"
+      "Engineered a full-stack group fitness feature for 15,000+ users in Laravel, handling UI design, database architecture, and RESTful API development with full CRUD functionality to support seamless interaction between users",
+      "Delivered the feature within a single 3-week Agile sprint; participated in 10+ daily Scrum meetings to ensure alignment and timely delivery of the group feature",
+      "Built dynamic dashboards tracking 10+ fitness metrics across multiple user groups, helping users visualize progress, identify trends, and drive accountability through performance comparisons",
+      "Collaborated with 25+ cross-functional interns and stakeholders to gather requirements and incorporate feedback"
     ]
   },
   {
@@ -33,10 +34,10 @@ export default [
     title: "Research Intern",
     date: "July - August 2023",
     responsiblites: [
-      "Conducted research on the brain's vascular perfusion following peripheral nerve trauma alongside graduate students, contributing to a deeper understanding of nerve injury impacts",
-      "Operated RWD RFLSI III Laser Speckle Imaging System and software to gather precise data on blood flow, enhancing the accuracy of research findings, and learned to use various RWD apparatus for comprehensive analysis",
-      "Wrote a research paper and presented the findings to faculty, worked with other interns in a team, and attended weekly research findings meetings",
-      "Leveraged Microsoft Excel to record and analyze experimental results, track progress, and manage precise timekeeping for research experiments"
+      "Worked with a graduate student to investigate changes in cerebral perfusion following peripheral nerve trauma",
+      "Operated the RWD RFLSI III Laser Speckle Imaging System to capture and analyze over 30 high-resolution cerebral blood flow images",
+      "Attended weekly lab meetings to observe faculty and graduate student research presentations and gain exposure to related neuroscience topics",
+      "Tracked experimental timelines and organized blood flow datasets in Microsoft Excel for statistical analysis"
     ]
   },
   {

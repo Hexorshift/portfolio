@@ -7,8 +7,8 @@ const AboutMe = () => {
       <Card.Root borderRadius="xl">
         <Card.Body p="2">
           <Text>
-            Hello! My name is Abu Chowdhury, and I am an aspiring software engineer. I enjoy working with various
-            technologies and primarily focus on full-stack development.
+            Hello! My name is Abu Chowdhury, and I am an aspiring software engineer based in New York City. I enjoy
+            working with various technologies and primarily focus on full-stack development.
           </Text>
         </Card.Body>
       </Card.Root>

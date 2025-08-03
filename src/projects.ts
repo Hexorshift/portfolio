@@ -21,7 +21,7 @@ export default [
     date: "October 2024",
     link: "https://abuc.me",
     github: "https://github.com/Hexorshift/portfolio",
-    img: "https://i.ibb.co/ft9mRyG/Screenshot-2025-01-06-145959.png"
+    img: "http://abuc.me/overview.png"
   },
   {
     name: "Mouse Controls",
