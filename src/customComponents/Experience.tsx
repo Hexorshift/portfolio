@@ -19,7 +19,7 @@ const Experience = () => {
                   </Avatar.Root>
                 </Timeline.Indicator>
               </Timeline.Connector>
-              <Timeline.Content mt="-3">
+              <Timeline.Content mt="-4">
                 <Accordion.Root multiple>
                   <Accordion.Item value={experience.company}>
                     <Accordion.ItemTrigger>
