@@ -1,7 +1,7 @@
+import Link from "next/link";
 import experiences from "@/experiences";
 import Section from "./Section";
-import { Avatar, Flex, List, Text, Timeline } from "@chakra-ui/react";
-import Link from "next/link";
+import { Accordion, Avatar, Box, Flex, List, Text, Timeline } from "@chakra-ui/react";
 
 const Experience = () => {
   return (
@@ -19,23 +19,30 @@ const Experience = () => {
                   </Avatar.Root>
                 </Timeline.Indicator>
               </Timeline.Connector>
-              <Timeline.Content>
-                <Link href={experience.url} target="_blank">
-                  <Timeline.Title textDecor="underline" fontSize="xl">
-                    {experience.company}
-                  </Timeline.Title>
-                </Link>
-                <Timeline.Description fontSize="md">
-                  <Flex flexDir={{ base: "column", md: "row" }} justifyContent="space-between">
-                    <Text>{experience.title}</Text>
-                    <Text>{experience.date}</Text>
-                  </Flex>
-                </Timeline.Description>
-                <List.Root as="ol" listStyle="decimal" px="5">
-                  {experience.responsiblites.map((responsiblity, index) => {
-                    return <List.Item key={index}>{responsiblity}</List.Item>;
-                  })}
-                </List.Root>
+              <Timeline.Content mt="-3">
+                <Accordion.Root multiple>
+                  <Accordion.Item value={experience.company}>
+                    <Accordion.ItemTrigger>
+                      <Box flex="1">
+                        <Text fontSize="xl">{experience.company}</Text>
+                        <Flex flexDir={{ base: "column", md: "row" }} justifyContent="space-between" fontSize="md">
+                          <Text>{experience.title}</Text>
+                          <Text>{experience.date}</Text>
+                        </Flex>
+                      </Box>
+                      <Accordion.ItemIndicator />
+                    </Accordion.ItemTrigger>
+                    <Accordion.ItemContent>
+                      <Accordion.ItemBody>
+                        <List.Root as="ol" listStyle="decimal" px="5">
+                          {experience.responsiblites.map((responsiblity, index) => {
+                            return <List.Item key={index}>{responsiblity}</List.Item>;
+                          })}
+                        </List.Root>
+                      </Accordion.ItemBody>
+                    </Accordion.ItemContent>
+                  </Accordion.Item>
+                </Accordion.Root>
               </Timeline.Content>
             </Timeline.Item>
           );
