@@ -33,16 +33,13 @@ const Projects = () => {
                 <Image src={project.img} alt={project.name} width="350px" height="200px" />
               )}
               <Card.Body p="1">
-                <Flex justifyContent="space-between">
-                  {project.link ? (
-                    <NextLink href={project.link} target="_blank" style={{ color: "#3182ce" }}>
-                      {project.name}
-                    </NextLink>
-                  ) : (
-                    <Text>{project.name}</Text>
-                  )}
-                  <Text>{project.date}</Text>
-                </Flex>
+                {project.link ? (
+                  <NextLink href={project.link} target="_blank" style={{ color: "#3182ce" }}>
+                    {project.name}
+                  </NextLink>
+                ) : (
+                  <Text>{project.name}</Text>
+                )}
                 <Flex justifyContent="space-between">
                   <Flex gap={1}>
                     {project.stack.map((tech, index) => {
