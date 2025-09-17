@@ -1,5 +1,19 @@
 export default [
   {
+    value: "fifth-item",
+    company: "NYC Department of Education",
+    logo: "/nyc-doe-logo.png",
+    url: "https://www.schools.nyc.gov",
+    title: "Tech Support Intern",
+    date: "August 2025 - Present",
+    responsiblites: [
+      "Served as a School Point of Contact for administrators, teachers, and students, providing technical support and troubleshooting for hardware, software, and network issues",
+      "Installed, configured, and maintained classroom and office technology, including workstations, printers, and peripheral devices",
+      "Managed technology assets and data tracking systems, enhancing workflows with Google Forms/Sheets and proprietary software",
+      "Administered and optimized school IT infrastructure, including servers, network switches, and printers, ensuring high availability and minimal downtime"
+    ]
+  },
+  {
     value: "fourth-item",
     company: "CUNY CCB4A",
     logo: "/cuny-logo.png",
@@ -20,10 +34,10 @@ export default [
     title: "Software Engineer Intern",
     date: "March - May 2025",
     responsiblites: [
-      "Engineered a full-stack group fitness feature for 15,000+ users in Laravel, handling UI design, database architecture, and RESTful API development with full CRUD functionality to support seamless interaction between users",
-      "Delivered the feature within a single 3-week Agile sprint; participated in 10+ daily Scrum meetings to ensure alignment and timely delivery of the group feature",
-      "Built dynamic dashboards tracking 10+ fitness metrics across multiple user groups, helping users visualize progress, identify trends, and drive accountability through performance comparisons",
-      "Collaborated with 25+ cross-functional interns and stakeholders to gather requirements and incorporate feedback"
+      "Engineered a full-stack group fitness feature in Laravel and Flutter for 15,000+ users, covering UI design, database architecture, and RESTful API development with complete CRUD functionality",
+      "Developed dynamic dashboards to track 10+ fitness metrics for user groups, enabling progress visualization, trend identification, and accountability",
+      "Delivered the feature within a 3-week Agile sprint, actively contributing in daily Scrum meetings to ensure project alignment and timely delivery",
+      "Collaborated with cross-functional interns and stakeholders in a fast-paced startup environment to gather requirements and iteratively refine solutions based on feedback"
     ]
   },
   {
@@ -34,10 +48,9 @@ export default [
     title: "Research Intern",
     date: "July - August 2023",
     responsiblites: [
-      "Worked with a graduate student to investigate changes in cerebral perfusion following peripheral nerve trauma",
-      "Operated the RWD RFLSI III Laser Speckle Imaging System to capture and analyze over 30 high-resolution cerebral blood flow images",
-      "Attended weekly lab meetings to observe faculty and graduate student research presentations and gain exposure to related neuroscience topics",
-      "Tracked experimental timelines and organized blood flow datasets in Microsoft Excel for statistical analysis"
+      "Investigated cerebral perfusion changes following peripheral nerve trauma alongside a graduate student",
+      "Operated the RWD RFLSI III Laser Speckle Imaging System to capture and analyze 30+ high-resolution cerebral blood flow images",
+      "Managed research timelines and organized datasets in Microsoft Excel to facilitate accurate statistical analysis"
     ]
   },
   {

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import experiences from "@/experiences";
 import Section from "./Section";
 import { Accordion, Avatar, Box, Flex, List, Text, Timeline } from "@chakra-ui/react";
